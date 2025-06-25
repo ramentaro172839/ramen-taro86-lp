@@ -18,7 +18,7 @@
             font-family: 'M PLUS Rounded 1c', 'Hiragino Sans', 'Yu Gothic', sans-serif;
             line-height: 1.6;
             color: #333;
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            background: linear-gradient(135deg, #ffecd2 0%, #fcb69f 25%, #a8edea 50%, #fed6e3 75%, #d299c2 100%);
             min-height: 100vh;
         }
 
@@ -30,12 +30,8 @@
 
         .header {
             text-align: center;
-            background: rgba(255, 255, 255, 0.95);
-            border-radius: 20px;
             padding: 40px 30px;
             margin-bottom: 30px;
-            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
-            backdrop-filter: blur(10px);
         }
 
         .profile-img {
@@ -69,33 +65,45 @@
         }
 
         .social-links {
-            background: rgba(255, 255, 255, 0.95);
-            border-radius: 20px;
             padding: 30px;
             margin-bottom: 30px;
-            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
-            backdrop-filter: blur(10px);
         }
 
         .social-links h2 {
             text-align: center;
             color: #2c3e50;
             margin-bottom: 25px;
-            font-size: 1.5em;
+            font-size: 1.8em;
+            background: linear-gradient(135deg, #e8f4f8, #f0f8ff);
+            padding: 15px 20px;
+            border-radius: 15px;
+            box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
         }
 
         .link-btn {
             display: block;
-            background: linear-gradient(45deg, #667eea, #764ba2);
-            color: white;
+            color: #2c3e50;
             text-decoration: none;
-            padding: 18px 30px;
+            padding: 22px 35px;
             border-radius: 25px;
-            margin-bottom: 15px;
+            margin-bottom: 18px;
             text-align: center;
             font-weight: bold;
             transition: transform 0.3s ease, box-shadow 0.3s ease;
-            font-size: 1.3em;
+            font-size: 1.5em;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        .link-btn:nth-child(2) {
+            background: linear-gradient(135deg, #e3f2fd, #bbdefb);
+        }
+
+        .link-btn:nth-child(3) {
+            background: linear-gradient(135deg, #f3e5f5, #e1bee7);
+        }
+
+        .link-btn:nth-child(4) {
+            background: linear-gradient(135deg, #fff3e0, #ffcc80);
         }
 
         .link-btn:hover {
@@ -195,9 +203,6 @@
             <a href="https://x.com/ramen_taro86" class="link-btn" target="_blank">
                 🐦 X (Twitter) をフォロー
             </a>
-            <a href="#" class="link-btn">
-                🎙️ HamCup Channel 音声配信
-            </a>
             <a href="https://discord.gg/kvhCb8dYz2" class="link-btn" target="_blank">
                 🐹 HamCup DAO Discord
             </a>
@@ -206,31 +211,6 @@
             </a>
         </div>
 
-        <div class="features">
-            <h2>🐹 らーめん太郎の活動</h2>
-            <div class="feature-grid">
-                <div class="feature-card">
-                    <div class="feature-icon">🎙️</div>
-                    <div class="feature-title">音声配信</div>
-                    <div class="feature-desc">HamCup channel 毎日20:30〜21:00配信</div>
-                </div>
-                <div class="feature-card">
-                    <div class="feature-icon">🎨</div>
-                    <div class="feature-title">作画担当</div>
-                    <div class="feature-desc">#らーめん横丁商店街 プロジェクト</div>
-                </div>
-                <div class="feature-card">
-                    <div class="feature-icon">🎧</div>
-                    <div class="feature-title">音楽生成</div>
-                    <div class="feature-desc">#sunoAI を使った音楽制作に注力</div>
-                </div>
-                <div class="feature-card">
-                    <div class="feature-icon">🐹</div>
-                    <div class="feature-title">HamCup DAO</div>
-                    <div class="feature-desc">HamCup大好き応援隊として活動中</div>
-                </div>
-            </div>
-        </div>
     </div>
 
     <div class="footer">
