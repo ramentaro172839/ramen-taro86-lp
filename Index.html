@@ -31,7 +31,7 @@
         .header {
             text-align: center;
             padding: 40px 30px;
-            margin-bottom: 30px;
+            margin-bottom: 5px;
         }
 
         .profile-img {
@@ -118,16 +118,52 @@
             background-repeat: no-repeat;
             background-position: center;
             position: absolute;
-            left: 15px;
+            left: 30px;
             flex-shrink: 0;
         }
 
         .link-btn:nth-child(3) {
             background: linear-gradient(135deg, #f3e5f5, #e1bee7);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            position: relative;
+            padding-left: 80px;
+        }
+
+        .link-btn:nth-child(3) .link-icon {
+            width: 80px;
+            height: 80px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 40px;
+            position: absolute;
+            left: 30px;
+            flex-shrink: 0;
         }
 
         .link-btn:nth-child(4) {
             background: linear-gradient(135deg, #fff3e0, #ffcc80);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            position: relative;
+            padding-left: 80px;
+        }
+
+        .link-btn:nth-child(4) .link-icon {
+            width: 80px;
+            height: 80px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 40px;
+            position: absolute;
+            left: 30px;
+            flex-shrink: 0;
         }
 
         .link-btn:hover {
@@ -217,7 +253,6 @@
             <div class="profile-img"></div>
             <h1 class="name">らーめん太郎</h1>
             <p class="description">
-                HamCup DAO応援隊として<br>毎日20:30〜音声配信中🎙️<br>
                 楽しいことが大好きで<br>パン好きならーめん太郎です。
             </p>
         </div>
@@ -232,10 +267,15 @@
                 </div>
             </a>
             <a href="https://discord.gg/kvhCb8dYz2" class="link-btn" target="_blank">
-                🐹 HamCup DAO Discord
+                <div class="link-icon">🐹</div>
+                <div>
+                    HamCup DAO Discord<br>
+                    <span style="font-size: 0.8em; opacity: 0.9;">はむ雑談部屋やスペース実況部屋で<br>楽しく交流できます。<br>はじめましての方も入りやすいコミュニティです。</span>
+                </div>
             </a>
             <a href="https://suno.com/@ramentaro86" class="link-btn" target="_blank">
-                🎧 sunoAI 音楽作品
+                <div class="link-icon">🎧</div>
+                <div>sunoAI 音楽作品</div>
             </a>
         </div>
 
