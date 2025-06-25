@@ -39,7 +39,7 @@
             height: 120px;
             border-radius: 50%;
             margin: 0 auto 20px;
-            background-image: url('./IMG_5742.jpeg');
+            background-image: url('./画像/IMG_5742.jpeg');
             background-size: cover;
             background-position: center;
             box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
@@ -102,6 +102,24 @@
 
         .link-btn:nth-child(2) {
             background: linear-gradient(135deg, #e3f2fd, #bbdefb);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            position: relative;
+            padding-left: 80px;
+        }
+
+        .link-btn:nth-child(2) .link-icon {
+            width: 80px;
+            height: 80px;
+            background-image: url('./画像/IMG_4670.PNG');
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: center;
+            position: absolute;
+            left: 15px;
+            flex-shrink: 0;
         }
 
         .link-btn:nth-child(3) {
@@ -207,7 +225,11 @@
         <div class="social-links">
             <h2>🔗 SNS・リンク</h2>
             <a href="https://x.com/ramen_taro86" class="link-btn" target="_blank">
-                🐦 X (Twitter) をフォロー
+                <div class="link-icon"></div>
+                <div>
+                    🐦 X (Twitter) をフォロー<br>
+                    <span style="font-size: 0.8em; opacity: 0.9;">ハイライトに過去ファンアート<br>作品をまとめています</span>
+                </div>
             </a>
             <a href="https://discord.gg/kvhCb8dYz2" class="link-btn" target="_blank">
                 🐹 HamCup DAO Discord
