@@ -23,7 +23,6 @@
                 url('./画像/おずぐるみ_全員集合_背景.jpg');
             background-size: cover;
             background-position: center;
-            background-attachment: fixed;
             background-repeat: no-repeat;
             min-height: 100vh;
         }
@@ -235,21 +234,106 @@
             opacity: 0.9;
         }
 
-        @media (max-width: 600px) {
+        @media (max-width: 768px) {
             .container {
                 padding: 15px;
             }
             
             .header {
-                padding: 30px 20px;
+                padding: 25px 15px;
+            }
+            
+            .profile-img {
+                width: 100px;
+                height: 100px;
             }
             
             .name {
                 font-size: 1.8em;
             }
             
+            .description {
+                font-size: 1.3em;
+                line-height: 1.6;
+                margin: 15px auto;
+            }
+            
             .social-links, .features {
-                padding: 25px 20px;
+                padding: 20px 15px;
+            }
+            
+            .link-btn {
+                padding: 18px 25px;
+                font-size: 1.3em;
+            }
+            
+            .link-btn:nth-child(2),
+            .link-btn:nth-child(3),
+            .link-btn:nth-child(4) {
+                padding-left: 60px;
+            }
+            
+            .link-btn:nth-child(2) .link-icon,
+            .link-btn:nth-child(3) .link-icon,
+            .link-btn:nth-child(4) .link-icon {
+                width: 60px;
+                height: 60px;
+                left: 20px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .container {
+                padding: 10px;
+            }
+            
+            .header {
+                padding: 20px 10px;
+            }
+            
+            .profile-img {
+                width: 80px;
+                height: 80px;
+            }
+            
+            .name {
+                font-size: 1.5em;
+            }
+            
+            .description {
+                font-size: 1.1em;
+                line-height: 1.5;
+                margin: 10px auto;
+            }
+            
+            .social-links, .features {
+                padding: 15px 10px;
+            }
+            
+            .link-btn {
+                padding: 15px 20px;
+                font-size: 1.1em;
+                margin-bottom: 12px;
+            }
+            
+            .link-btn:nth-child(2),
+            .link-btn:nth-child(3),
+            .link-btn:nth-child(4) {
+                padding-left: 50px;
+            }
+            
+            .link-btn:nth-child(2) .link-icon,
+            .link-btn:nth-child(3) .link-icon,
+            .link-btn:nth-child(4) .link-icon {
+                width: 50px;
+                height: 50px;
+                left: 15px;
+                font-size: 30px;
+            }
+            
+            .social-links h2 {
+                font-size: 1.5em;
+                padding: 12px 15px;
             }
         }
 
